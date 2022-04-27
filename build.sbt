@@ -26,7 +26,7 @@ lazy val cross = crossProject(JSPlatform, JVMPlatform).in(file(".")).
       "org.typelevel" %%% "cats-core" % "2.1.0",
       "org.scalatest" %%% "scalatest" % "3.0.8" % "test",
       "org.scalacheck" %%% "scalacheck" % "1.14.0" % "test",
-      compilerPlugin("org.typelevel" %% "kind-projector" % "0.10.3" cross CrossVersion.binary)
+      compilerPlugin("org.typelevel" %% "kind-projector" % "0.13.2" cross CrossVersion.full)
     ),
     publishMavenStyle := true,
     licenses += ("MIT license", url("http://opensource.org/licenses/MIT")),
